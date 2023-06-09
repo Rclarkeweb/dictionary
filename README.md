@@ -16,4 +16,4 @@ It was created using HTML5, CSS3, Bootstrap and JavaScript.
 
 ## View it live
 
-You can view the project and try it out [here]().
+You can view the project and try it out [here](https://rclarkeweb.github.io/dictionary/).
