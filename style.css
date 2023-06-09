@@ -1,0 +1,16 @@
+body {
+    background-color: #e8eddf !important;
+}
+
+h1, p {
+    color: #16425b !important;
+}
+
+.btn {
+    background-color: #3a7ca5 !important;
+    color: #fff !important;
+}
+
+#errorMsg {
+    color: red;
+}
