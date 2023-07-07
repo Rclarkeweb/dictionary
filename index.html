@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary - Find a word's meaning</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
-<body>
 
-    <div class="text-center m-4">
-        <h1>Dictionary</h1>
-        <p>Enter a word to find out it's meaning</p>
-    </div>
+    <!-- Font Awesome Icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/69f7465c1a.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <form>
-        <div id="enterWord" class="d-flex justify-content-center">
-            <input id="wordInput" type="text" class="form-control w-50 me-2" aria-label="Enter a word"
-                aria-describedby="Enter a word to search in the dictionary" placeholder="Enter a word">
-            <button type="button" class="btn fw-medium" id="findWord" onclick="searchWord()">SEARCH</button>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="header" class="container text-center my-5">
+        <div class="row">
+            <div class="col">
+                <p id ="home" class="font-serif">Dictionary &nbsp;&nbsp;<i class="fa-solid fa-book fa-2xl"></i></p>
+            </div>
+            <div class="col">
+                <span id="serif" class="px-2 font-options font-serif">Se</span>
+                <span id="sans" class="px-2 font-options font-sans">Sa</span>
+                <span id="mono" class="px-2 font-options font-mono">Mo</span>
+                <button id="toggle" class="dark-button" onclick="darklight()"><i class="fa-solid fa-moon"></i></button>
+            </div>
         </div>
-    </form>
-    
-    <div id="results" class="px-4">
-        <div id="errorMsg" class="fw-medium p-2 text-center"></div>
-        <div id="displayWord" class="text-center fs-2 fw-bold pb-1"></div>
-        <div id="unknown" class="fw-medium p-2 text-center"></div>
-        <div id="partOfSpeech" class="text-center fs-5 pb-1"></div>
-        <div id="definition" class="text-center fs-5 px-4 pb-1"></div>
     </div>
+
+
+      <!-- The form -->
+      <div class="container text-center py-3 px-5">
+        <div class="">
+            <form class="searchWord">
+                <div class="input-group mb-3">
+                    <label for="wordInput" class="form-label visually-hidden">Enter a word to search in the Dictionary</label>
+                    <input id="wordInput" type="text" class="inputField font-serif rounded-start border border-0 text-bg-light form-control" placeholder="Enter a word" aria-label="Enter a word"
+                        aria-describedby="findword">
+                    <button class="btn btn-light border border-0" id="findWord" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+      </div>
+      
+        <div class="container text-center ">
+            <div class="row font-serif" id="results">
+                <div id="errorMsg" class=""></div>
+                <div id="displayWord" class=""></div>
+                <div id="unknown" class=""></div>
+                <div id="partOfSpeech" class=""></div>
+                <div id="definition" class=""></div>
+            </div>
+        </div>
 
 
     <!-- Script -->
@@ -44,5 +85,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-</body>
+
+  </body>
 </html>

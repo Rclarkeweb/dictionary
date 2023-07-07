@@ -2,6 +2,11 @@
 
 A web app that uses the [Free Dictionary API](https://dictionaryapi.dev/). It takes a user input and searches for that word when the user clicks the search button. The words definition and whether it is a noun or verb is then displayed. There is a validation check to check if the word exists or if the input is empty.
 
+## Extra Features
+
+- Option of changing the fonts displayed on screen to Serif, Sans Serif or Monospace.
+- A Dark Mode option to change the color scheme to dark mode.
+
 ## Tech used
 
 It was created using HTML5, CSS3, Bootstrap and JavaScript.

@@ -1,16 +1,88 @@
-body {
-    background-color: #e8eddf !important;
+#home {
+    cursor: pointer;
 }
 
-h1, p {
-    color: #16425b !important;
+#displayWord {
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
-.btn {
-    background-color: #3a7ca5 !important;
-    color: #fff !important;
+#partOfSpeech {
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
-#errorMsg {
-    color: red;
+.dark-button {
+    border: none;
+    border-radius: 5px;
+}
+
+.darkMode {
+    background-color: #333;
+}
+
+.lightMode {
+    background-color: #fff;
+}
+
+/* Font Options Styling */
+
+/* SERIF FONT */
+
+.font-serif {
+    font-family: 'Roboto Slab', serif;
+}
+
+#serif {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+#serif:hover {
+    background-color: #e7e7e7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* SANS SERIF FONT */
+
+.font-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#sans {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#sans:hover {
+    background-color: #e7e7e7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ---------------------------------------------------------- */
+
+/* MONOSPACE FONT */
+
+.font-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#mono {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#mono:hover {
+    background-color: #e7e7e7;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.font-options {
+    cursor: pointer;
 }
