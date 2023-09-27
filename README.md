@@ -22,3 +22,11 @@ It was created using HTML5, CSS3, Bootstrap and JavaScript.
 ## View it live
 
 You can view the project and try it out [here](https://rclarkeweb.github.io/dictionary/).
+
+## Screenshots
+
+**In Dark Mode**
+![image](https://github.com/Rclarkeweb/are-you-bored/assets/108008511/78522d98-5422-4fdf-a512-ad9dec7b585a)
+
+**In light mode, with different font option**
+![image](https://github.com/Rclarkeweb/are-you-bored/assets/108008511/bbc37fad-bf47-4544-90b7-1c995c37a9b4)
